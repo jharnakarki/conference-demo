@@ -8,8 +8,8 @@ import java.util.List;
 @Entity(name= "sessions")
 @JsonIgnoreProperties({"hibernateLazy Initializer","handler"})
   public class Session {
-//    @Id
-//    @GeneratedValue(strategy =generationType.IDENTITY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long session_id;
     private String session_name;
     private String session_description;
